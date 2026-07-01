@@ -29,11 +29,7 @@ jobs:
       - name: Generate static files
         run: npm run generate
 
-      # 5. Add CNAME for the domain
-      - name: Add CNAME
-        run: echo "www.foss4g.be" > .output/public/CNAME
-
-      # 6. Upload artifact
+      # 5. Upload artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:

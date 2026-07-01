@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     },
 
     app: {
+        baseURL: '/2025.foss4g.be/',
         pageTransition: {name: "page", mode: "out-in"},
         head: {
             title: "FOSS4G Belgium 2025",
@@ -55,8 +56,8 @@ export default defineNuxtConfig({
             cookieKey: 'i18n_redirected',
             redirectOn: 'root' // recommended for SEO
         },
-        baseUrl: 'https://foss4g.be',
-        strategy: 'prefix',
+        baseUrl: 'https://osgeo-be.github.io/2025.foss4g.be',
+        strategy: 'prefix_and_default',
         vueI18n: "../i18n.config.ts",
     },
 
